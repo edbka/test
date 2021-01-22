@@ -1,1 +1,31 @@
-00000000000000000
+{
+	"chatEnabled":true,
+	"emptyMessage":"Здравствуйте, {Имя}! Добро пожаловать в онлайн-офис! Здесь вы можете задать вопрос сотруднику Банка в чате, заказать справку или выписку по счёту, найти отделение Банка или банкомат поблизости.",
+	"chatUrl":"wss://demo.faktura.ru/mobwspost/3.0/json/chat",
+	"dbo2ChatUrl":"wss://mytest.pochtabank.ru:943/dbo/mobws/3.0/json/chat",
+	"chatLoginUrl":"https://online.pochtabank.ru:4443/mobws/3.0/json/login",
+  	"widgetRefreshTime":3600,
+	"rating":{
+		"ratingEnabled":true,
+		"rateDelay":180,
+		"hideDelay":600,
+      	"rateAgainDelay":1200
+	},
+	"requests":[
+        {
+      "name": "Тестовая кнопка",
+      "message": "тестовое сообщение из кнопки",
+      "screen": null
+    	},	
+      {
+			"name":"Подключить СМС",
+			"message":"Прошу подключить СМС информирование",
+			"screen":null
+		},
+		{
+			"name":"Отделения",
+			"message":null,
+			"screen":"POIMap"
+		}
+	]
+}
